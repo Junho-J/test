@@ -8,6 +8,7 @@
             font-family: Arial, sans-serif;
             padding: 20px;
             background-color: #f9f9f9;
+            margin: 0;
         }
         h2 {
             text-align: center;
@@ -25,6 +26,7 @@
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-size: : 16px;
         }
         button {
             width: 100%;
@@ -45,11 +47,30 @@
             color: green;
             margin-top: 20px;
         }
+        p {
+          text-align: :center;
+          font-size: 16px;
+          margin-top: 20px;
+        }
 
         /* Responsive Anpassungen */
         @media (min-width: 600px) {
             .form-container {
-                padding: 0 20px;
+                padding: 30px;
+                max-width: :600px;
+            }
+            h2{
+              font-size: 50px;
+            }
+            input[type="text"]{
+              font-size: 35px;
+            }
+            button{
+              font-size: 35px;
+              padding: 15px;
+            }
+            p{
+              font-size: 30px;
             }
         }
     </style>
@@ -74,7 +95,8 @@
         <br><br>
         <button onclick="window.location.href='https://forms.gle/7p3aWVyfZbjHDxN69'">구글시트로가기</button>
         <div id="confirmation"></div>
+          <p>위 의견 보내기는 프로토타입이므로 보내실 의견이 있으시면 구글 시트로 가기로 가셔서 적어주세요</p>
     </div>
-    <p>위 의견 보내기는 프로토타입이므로 보내실 의견이 있으시면 구글 시트로 가기로 가셔서 적어주세요</p>
+
 </body>
 </html>
