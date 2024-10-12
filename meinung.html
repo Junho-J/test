@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>의견 보네기</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #confirmation {
+            color: green;
+            margin-top: 20px;
+        }
+
+        /* Responsive Anpassungen */
+        @media (min-width: 600px) {
+            .form-container {
+                padding: 0 20px;
+            }
+        }
+    </style>
+    <script>
+        function senden() {
+            const text = document.getElementById('meinung').value;
+            if (text.length > 0 && text.length <= 100) {
+                document.getElementById('confirmation').innerText = '의견 보네기';
+                document.getElementById('meinung').value = '';
+            } else {
+                alert('100글자 이내고 적어주세요');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>의견</h2>
+    <div class="form-container">
+        <input type="text" id="meinung" placeholder="의견을 적어 주세요" maxlength="100">
+        <br>
+        <button onclick="senden()">보내기</button>
+        <br><br>
+        <button onclick="window.location.href='https://forms.gle/7p3aWVyfZbjHDxN69'">구글시트로가기</button>
+        <div id="confirmation"></div>
+    </div>
+    <p>위 의견 보내기는 프로토타입이므로 보내실 의견이 있으시면 구글 시트로 가기로 가셔서 적어주세요</p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Startseite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Grundlegende Stile */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Immer vertikal */
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .button-container button {
+            width: 100%; /* Buttons nehmen die gesamte Breite des Containers ein */
+            padding: 15px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .button-container button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Zusätzliche Stile für größere Bildschirme */
+        @media (min-width: 600px) {
+            .button-container {
+                max-width: 600px; /* Erhöhte maximale Breite für größere Bildschirme */
+            }
+
+            .button-container button {
+                font-size: 20px; /* Größere Schriftgröße auf größeren Bildschirmen */
+                padding: 20px; /* Mehr Padding für größere Buttons */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mogam Website</h1>
+    <div class="button-container">
+      <button onclick="window.location.href='meinung.html'">질의응답</button>
+      <button onclick="window.location.href='wohnungssuche.html'">구해줘 집</button>
+      <button onclick="window.location.href='visa.html'">도와줘 비자</button>
+      <button onclick="window.location.href='marktplatz.html'">자유마켓</button>
+    </div>
+</body>
+</html>
