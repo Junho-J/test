@@ -96,25 +96,23 @@
             const details = document.getElementById('details');
             if (details.style.display === 'none' || details.style.display === '') {
                 details.style.display = 'block';
-            } else {
-                details.style.display = 'none';
             }
         }
     </script>
 </head>
 <body>
-    <h2>집을 구하고 구하는 글을 쓰는 장소</h2>
-    <div class="title" onclick="toggleDetails()">쯔비센 24크바 한달 200€</div>
+    <h2>집을 구하고 세입자 구하는 글을 쓰는 장소</h2>
+    <div class="title">쯔비센 24크바 한달 200€</div>
     <div id="details" class="details">
       <p><strong>주소:</strong> Musterstraße 123, Aachen Schanz</p>
       <p><strong>가격:</strong> 한달 200유로</p>
-      <p><strong>위치:</strong> 교통이 좋은 좋아요</p>
+      <p><strong>위치:</strong> 교통이 좋아요</p>
     </div>
 
     <!-- Placeholder Buttons -->
     <div class="placeholder-buttons">
         <button>집 구해요</button>
-        <button>세입자 구해요</button>
+        <button onclick="toggleDetails()">세입자 구해요</button>
     </div>
 </body>
 </html>
