@@ -20,13 +20,39 @@
             margin: 0 auto;
         }
 
+        /* Stil für die Buttons */
+        .placeholder-buttons {
+            margin-top: 20px;
+        }
+
+        .placeholder-buttons button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .placeholder-buttons button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
         /* Responsive Anpassungen */
         @media (min-width: 600px) {
-            h2{
-              font-size: 50px;
+            h2 {
+                font-size: 50px;
             }
             p {
                 font-size: 35px;
+            }
+            .placeholder-buttons button {
+                font-size: 24px;
+                padding: 15px 30px;
             }
         }
     </style>
@@ -34,5 +60,11 @@
 <body>
     <h2>자유마켓</h2>
     <p>여기서 사고 파실 수 있습니다</p>
+
+    <!-- Platzhalter Buttons -->
+    <div class="placeholder-buttons">
+        <button>팔아요</button>
+        <button>사요</button>
+    </div>
 </body>
 </html>
