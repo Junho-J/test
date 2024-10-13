@@ -94,15 +94,6 @@
         }
 
     </style>
-    <script>
-        function showDetails() {
-            // Zeigt die "title"- und "details"-Divs an
-            const title = document.querySelector('.title');
-            const details = document.getElementById('details');
-            title.style.display = 'block';
-            details.style.display = 'block';
-        }
-    </script>
 </head>
 <body>
     <h2>집을 구하고 구하는 글을 쓰는 장소</h2>
@@ -110,15 +101,7 @@
     <!-- Platzhalter Buttons -->
     <div class="placeholder-buttons">
         <button>집 구해요</button>
-        <button onclick="showDetails()">세입자 구해요</button>
-    </div>
-
-    <!-- Diese Abschnitte werden erst sichtbar, wenn der Button "세입자 구해요" geklickt wird -->
-    <div class="title">쯔비센 24크바 한달 200€</div>
-    <div id="details" class="details">
-      <p><strong>주소:</strong> Musterstraße 123, Aachen Schanz</p>
-      <p><strong>가격:</strong> 한달 200유로</p>
-      <p><strong>위치:</strong> 교통이 좋은 좋아요</p>
+        <button>세입자 구해요</button>
     </div>
 </body>
 </html>
